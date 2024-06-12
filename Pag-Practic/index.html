@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML y CSS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        
+        
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 2rem;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background-color: bisque;
+        }
+        
+        li{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            font: 1rem;
+        }
+
+        a:hover{
+            color:blue
+        }
+
+        header{
+            font-size: 1.7rem;
+            position: relative;
+            padding: 0 2rem;
+
+        }
+
+        .imagen{
+            width:1170px;
+            height: auto;
+        }
+
+        .iframe{
+            width: 25cm;
+            height: 25cm;
+            margin: 100px ;
+        }
+
+        .navbar{
+            background: transparent;
+            width: 100%;
+            height: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar .logo a{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar .links{   
+        display: flex;
+        gap: 2rem;
+    }
+    .navbar.toggle_btn{
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: none;
+    }
+
+    @media (max-width: 992px){
+        .navbar-link{
+            display: block;
+        }
+        
+        .navbar.toggle_btn{
+            display: block;
+        
+        }
+        }
+
+        .parrafo{
+            font-size: 1.5rem;
+        }
+        main {
+            padding-top: 80px;
+            padding: 20px;
+        }
+        main div {
+            margin-bottom: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .grid-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .grid-item h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .grid-item p {
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+    </style>
+</head>
+<body>
+
+    <span class="material-symbols-outlined">
+        home
+        </span>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">HTML/CSS</a></div>
+                <ul class="links">
+                    <li><a href="#Html">Html</a></li>
+                    <li><a href="#CSS">Css</a></li>
+                    <li><a href="#Elementos Html">Elementos Html</a></li>
+                    <li><a href="#Elementos Css">Elementos Css</a></li>
+                    <li><a href="#Maps">Maps Unphu</a></li>
+                    <li><a href="#Dalto">Curso Dalto</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+        </div>
+    </header>
+    <main>
+        <img class="imagen" src="https://miro.medium.com/v2/resize:fit:960/1*OlyP02fRFe8pEkJgb6vGTQ.png" alt="">
+        <br>
+        <hr>
+        <div class="content-section">
+
+            <div class="imagen">
+            </div>
+            <h3 id="Html">HTML</h3>
+            <p class="parrafo">
+                Es el lenguaje estándar utilizado para crear y diseñar páginas web. Nos permite definir la estructura de la página y el contenido que se va a mostrar en el navegador. Los archivos HTML tienen extensión .html           
+            </p>
+            <br>
+            <h3 id="CSS">CSS</h3>
+            <p class="parrafo">
+                Es el lenguaje utilizado para modificar el diseño y presentación de las páginas web. Cambia su estilo y apariencia incluyendo cosas como: colores, fuentes, márgenes, tamaños de texto y muchas otras más.
+            </p>
+            <p class="parrafo">
+                Se les denomina hojas de estilo «en cascada» porque puedes tener varias y una de ellas con las propiedades heredadas (o «en cascada») de otras.
+            </p>
+        </div>
+        
+        <div>
+            <h3 id="Elemento htmal">Elementos HTML</h3>
+            <p class="parrafo">
+                Elementos Comunes de HTML(Lenguaje de Marcado de Hipertexto), es la piedra angular de la creación de páginas web. Entre sus elementos más utilizados se encuentran:
+            </p>
+            <ul>
+                <br>
+                <li>Etiquetas de Encabezado (h1 a h6): 
+                    <p class="parrafo">Definen los títulos y subtítulos, siendo h1 el más importante.</p>
+                </li>
+                <br> 
+                <li>Párrafo (p): 
+                    <p class="parrafo">Se utiliza para delimitar bloques de texto.</p>
+                <br>
+                </li>
+                <li>Enlaces (a): 
+                    <p class="parrafo">Permiten la navegación entre páginas mediante hipervínculos.</p>
+                <br>
+                </li>
+                <li>Imágenes (img): 
+                    <p class="parrafo">Incrustan imágenes en la página, utilizando atributos como src para la dirección de la imagen y alt para la descripción. Estos elementos son fundamentales para estructurar el contenido y facilitar una experiencia de usuario coherente y accesible en la web. Además, se complementan con CSS para mejorar la presentación visual y con JavaScript para añadir interactividad.</p>
+                <br>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 id="Elemento CSS">Elementos CSS</h3id>
+            <p class="parrafo">
+                CSS, o Hojas de Estilo en Cascada, es esencial para el diseño web moderno. Entre sus elementos más utilizados están los selectores, que identifican elementos HTML para aplicarles estilos. Las propiedades como color, font-size, margin y padding definen el aspecto visual de los elementos. Las unidades de medida, como px, em, rem, y %, permiten un diseño flexible y adaptable a diferentes dispositivos. Además, las media queries son cruciales para el diseño responsivo, ajustando estilos según el tamaño de la pantalla. Finalmente, Flexbox y Grid son herramientas poderosas para crear diseños complejos y responsivos, facilitando la alineación y distribución de elementos en una página web. Estos elementos de CSS son fundamentales para crear interfaces atractivas y funcionales.
+            </p>
+        </div>
+
+        <div>
+            <h3>Tabla con bordes</h3>
+            <table id="table">
+                <tr>
+                    <th>Elemento</th>
+                    <th>Descripcion</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Lenguaje estándar para crear páginas web.</td>
+                <tr>
+                    <td>Etiquetas</td>
+                    <td>Indican al navegador cómo mostrar el contenido.</td>
+                </tr>
+                <tr>
+                    <td>Atributos</td>
+                    <td>Proporcionan información adicional sobre los elementos.</td>
+                </tr>
+                    <td>Estructura</td>
+                    <td>Incluye !DOCTYPE html, html, head, y body.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h2>Grid con elementos</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Margin</h3>
+                    <p>El margen define el espacio exterior alrededor de un elemento.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Padding</h3>
+                    <p>El relleno define el espacio interior entre el contenido de un elemento y su borde.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Border</h3>
+                    <p>La propiedad borde define el borde alrededor de un elemento, incluyendo su estilo, ancho y color.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Background</h3>
+                    <p>La propiedad de fondo permite definir el color, imagen, posición y repetición del fondo de un elemento.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Flexbox</h3>
+                    <p>Flexbox es un modelo de diseño unidimensional que se utiliza para crear layouts flexibles.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Grid</h3>
+                    <p>CSS Grid Layout es un sistema de diseño bidimensional que permite crear layouts complejos con facilidad.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Font</h3>
+                    <p>Las propiedades de fuente permiten definir la familia, tamaño, peso, estilo y otras características de las fuentes de texto.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Color</h3>
+                    <p>La propiedad de color define el color del texto de un elemento.</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 id="Maps">Unphu Google Maps</h2>
+            <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.952448260259!2d-69.948334!3d18.485813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f362e578d3%3A0x19d59fe09af95898!2sUniversidad%20Nacional%20Pedro%20Henr%C3%ADquez%20Ure%C3%B1a%20(UNPHU)!5e0!3m2!1ses!2sdo!4v1717942887066!5m2!1ses!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <h2 id="Dalto">Curso Dalto</h2>
+            <iframe class="iframe" src="https://www.youtube.com/embed/ELSm-G201Ls?si=XD5MlMiTYZGMKagi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>Pagina Desarrollada por Nelfry Mercado De Jesus Matricula: 21-0153</p>
+    </footer>
+</body>
+</html>
