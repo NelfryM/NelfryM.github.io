@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal">
+    <meta name="keywords" content="portafolio, desarrollador, diseño web">
+    <meta name="author" content="Tu Nombre">
+    <link rel="icon" href="img/Logo_Icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portafolio Personal</title>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/img/logoImg.png" alt="Logo" height="30"></a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                <a class="nav-link" href="#sobre-mi">Sobre mí
+                </a><a class="nav-link" href="#portafolio">Portafolio</a>
+            </a><a class="nav-link" href="#enlaces">Enlaces de Interes</a>
+            
+        </a><a class="nav-link" href="#noticias">Noticias</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
+            </div>
+        </div>
+        
+        <button id="darkModeToggle" class="btn btn-outline-secondary ms-auto">Modo Oscuro</button>
+    </div>
+</nav>
+
+<!-- Sección de inicio -->
+<section id="inicio" class="container mt-5">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/imCarrusel1.png" class="d-block w-100" alt="ImgCarrusel1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bienvenido a mi sitio web</h5>
+                    <p>Gracia por visitar mi pagina</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/img/ImgCarrusel2.png" class="d-block w-100" alt="ImgCarrusel2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bienvenido a mi sitio web</h5>
+                    <p>Gracia por visitar mi pagina</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/img/imgCarrusel3.png" class="d-block w-100" alt="imgCarrusel3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bienvenido a mi sitio web</h5>
+                    <p>Gracia por visitar mi pagina</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</section>
+
+<!-- Sección Sobre mí -->
+<section id="sobre-mi" class="container mt-5">
+    <h2>Sobre mí</h2>
+    <p> ¡Hola! Mi nombre es Nelfry Mercado de Jesús, y soy un apasionado estudiante de 21 años que actualmente cursa estudios en la Universidad Nacional Pedro Henríquez Ureña. Mi fascinación por la tecnología y la programación me ha llevado a explorar diferentes áreas, desde el desarrollo web hasta la inteligencia artificial.</p>
+    <p>¡Bienvenido a mi portafolio! Aquí encontrarás una muestra de mis proyectos, habilidades y logros. Siéntete libre de explorar y conocer más sobre mí. </p>
+    
+    <img src="/img/Perfil.png" class="img-fluid" alt="Imagen sobre mí">
+</section>
+
+<!-- Sección Portafolio -->
+<section id="portafolio" class="container mt-5">
+    <h2>Portafolio</h2>
+    <div class="row">
+        <!-- Proyectos del portafolio -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/img/Tienda_OnlineProyectImg.png" class="card-img-top" alt="Proyect1">
+                <div class="card-body">
+                    <h5 class="card-title">Tienda Online</h5>
+                    <p class="card-text">Este Proyeco es la construcción y puesta en marcha de una tienda virtual que permita a los clientes comprar en línea.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/img/Sistema_BancarioImg.png" class="card-img-top" alt="Proyect2">
+                <div class="card-body">
+                    <h5 class="card-title">Sistema Bancario</h5>
+                    <p class="card-text">Este es un proyecto se desarrollado en Java y tiene como objetivo brindar un servicio en línea eficiente. Permitiendo a los usuarios acceder al banco desde cualquier lugar y mejora los procesos bancarios.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/img/GestionSalud_ProyectImg.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Sistema gestion de hospital</h5>
+                    <p class="card-text">Este Proyecto incluye módulos para gestionar la admisión de pacientes, historias clínicas, citas médicas, facturación, inventario y recursos humanos.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Sección de enlaces de interés -->
+<section id="enlaces" class="container mt-5">
+    <h2>Enlaces de interés</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HH_SMpxV7qQ?si=_1XEliCXsnj_nsJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.9524486444184!2d-69.9509089248092!3d18.485812982600926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f362e578d3%3A0x19d59fe09af95898!2sUniversidad%20Nacional%20Pedro%20Henr%C3%ADquez%20Ure%C3%B1a%20(UNPHU)!5e0!3m2!1ses!2sdo!4v1719887465989!5m2!1ses!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<!-- Sección de noticias o artículos -->
+<section id="noticias" class="container mt-5">
+    <h2>Noticias tecnológicas en la actualidad</h2>
+    <p>En el mundo de la tecnología, hay muchas noticias interesantes. Algunas de las últimas novedades incluyen:</p>
+    <ul>
+        <li><a href="https://informatecdigital.com/inteligencia-artificial/aprendizaje-automatico-conceptos-basicos-y-avanzados/">Avances en inteligencia artificial y aprendizaje automático.</a></li>
+        <br>
+        <li><a href="https://blogthinkbig.com/que-es-la-computacion-cuantica-y-por-que-es-importante-para-el-desarrollo-de-nuevas-tecnologias">Desarrollos en la computación cuántica.</a></li>
+        <br>
+        <li><a href="https://cyberprotegidos.info/tecnologias-y-herramientas/actualizaciones-software-privacidad-son-esenciales-tu-seguridad-linea/">Actualizaciones en ciberseguridad y privacidad en línea.</a></li>
+    </ul>
+</section>
+
+<!-- Sección Contacto -->
+<section id="contacto" class="container mt-5">
+    <h2>Contacto</h2>
+    <form id="contactForm" action="https://formsubmit.co/nm21-0153@unphu.edu.do" method="POST">
+        <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" name="name" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="subject" class="form-label">Asunto</label>
+            <input type="tex" name="subject" class="form-control" id="subject" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+    <div id="contactAlert" class="alert alert-success mt-3 d-none" role="alert">
+        ¡Mensaje enviado con éxito!
+    </div>
+</section>
+
+<!-- Sección de Políticas de Privacidad -->
+<section id="politicas" class="container mt-5" style="display: none;">
+    <h2>Políticas de Privacidad</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    <p>Esta política de privacidad describe cómo manejamos y protegemos su información personal. Nos comprometemos a respetar su privacidad y proteger sus datos personales.</p>
+    <p>Recolección de Información: Recopilamos información personal cuando se registra en nuestro sitio, realiza un pedido, se suscribe a nuestro boletín, responde a una encuesta o llena un formulario. La información recopilada puede incluir su nombre, dirección de correo electrónico, dirección postal, número de teléfono y detalles de su tarjeta de crédito.</p>
+    <p>Uso de la Información: La información que recopilamos de usted puede ser utilizada para personalizar su experiencia, mejorar nuestro sitio web, mejorar el servicio al cliente, procesar transacciones, administrar un concurso, promoción, encuesta u otra característica del sitio y enviar correos electrónicos periódicos.</p>
+    <p>Protección de la Información: Implementamos diversas medidas de seguridad para mantener la seguridad de su información personal cuando realiza un pedido o ingresa, envía o accede a su información personal. Ofrecemos el uso de un servidor seguro. Toda la información sensible/de crédito suministrada se transmite a través de la tecnología Secure Socket Layer (SSL) y luego se encripta en nuestra base de datos de proveedores de pasarela de pago solo para ser accesible por aquellos autorizados con derechos especiales de acceso a dichos sistemas, y están obligados a mantener la información confidencial.</p>
+    <p>Divulgación a Terceros: No vendemos, comercializamos ni transferimos a terceros su información personal identificable. Esto no incluye a terceros de confianza que nos ayudan a operar nuestro sitio web, conducir nuestro negocio o prestarle servicios, siempre que esas partes acuerden mantener esta información confidencial. También podemos divulgar su información cuando creemos que la divulgación es apropiada para cumplir con la ley, hacer cumplir las políticas de nuestro sitio, o proteger nuestros derechos, propiedad o seguridad, o la de otros. Sin embargo, la información de visitantes no identificable personalmente puede ser proporcionada a otras partes para marketing, publicidad u otros usos.</p>
+</section>
+
+<!-- Redes Sociales -->
+<footer class="container mt-5 text-center">
+    <a href="https://www.facebook.com/nelfry.mercado/" class="me-3"><i class="bi bi-facebook"></i></a>
+    <a href="https://www.instagram.com/nnelfry/" class="me-3"><i class="bi bi-instagram"></i></a>
+    <a href="https://www.tiktok.com/@nelfrymercado?is_from_webapp=1&sender_device=pc" class="me-3"><i class="bi bi-tiktok"></i></a>
+
+    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+    <h5 class="text-uppercase">Enlaces</h5>
+    <ul class="list-unstyled mb-0">
+        <li>
+            <a href="#!" id="toggle-privacidad" class="text-dark">Políticas de Privacidad</a>
+        </li>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+<script src="scripts.js"></script>
+</body>
+</html>
