@@ -3,30 +3,13 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #f7f7f7;
   transition: background-color 0.3s ease;
-}
-
-
-/* Estilos para el modo oscuro */
-/* Estilos para el modo claro (por defecto) */
-body {
-  background-color: #ffffff;
   color: #000000;
 }
 
-/* Estilos para el modo oscuro */
+/* Estilos para el modo claro (por defecto) */
 body.dark-mode {
   background-color: #121212;
-  color:  #f0f0f0; 
-}
-
-.navbar.dark-mode {
-  background-color: #1f1f1f;
-}
-
-.card.dark-mode {
-  background-color: #1f1f1f;
-  border-color: #444444;
-  color: #f0f0f0; 
+  color: black;
 }
 
 /* Barra de navegación */
@@ -56,6 +39,32 @@ body.dark-mode {
 
 .nav-link:hover {
   color: #ccc;
+}
+
+/* Estilos para la notificación */
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+}
+
+.notification.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.d-none {
+  display: none;
 }
 
 /* Sección de inicio */
@@ -198,46 +207,9 @@ body.dark-mode {
   transition: background-color 0.3s ease;
 }
 
-/* Redes Sociales */
-footer {
-  background-color: #333;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-}
-
-footer a {
-  color: #fff;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #ccc;
-}
-
-
-/* Sección de Políticas de Privacidad */
-#politicas {
-  background-color: #f7f7f7;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-}
-
-#politicas h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  transition: color 0.3s ease;
-}
-
-#politicas p {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 20px;
-  transition: color 0.3s ease;
+.error {
+  font-size: 0.875em;
+  color: red;
 }
 
 /* Sección de enlaces de interés */
@@ -278,23 +250,95 @@ footer a:hover {
   color: #666;
   margin-bottom: 20px;
   transition: color 0.3s ease;
-
-
 }
 
-/* Modo oscuro 
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-body.dark-mode .navbar,
-body.dark-mode .card,
-body.dark-mode .alert {
-  background-color: #1e1e1e;
-  color: #ffffff;
+/* Redes Sociales */
+footer {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+  margin-top: 50px; /* Ajuste de margen superior para separar del contenido superior */
 }
 
-body.dark-mode .navbar-brand,
-body.dark-mode .nav-link {
-  color: #ffffff;
-}*/
+footer .social-links {
+  margin-bottom: 20px; /* Espacio inferior para separar de los enlaces de privacidad */
+}
+
+
+footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+/* Sección de Políticas de Privacidad */
+#politicas {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  max-width: 90%;
+  width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+#politicas h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  color: #333;
+}
+
+#politicas p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#close-privacidad {
+  position: center;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+footer .privacy-links {
+  text-align: center;
+  
+  margin-top: 20px; /* Espacio superior para separar de los enlaces sociales */
+}
+
+footer .privacy-links h5,
+footer .privacy-links a {
+  position: center;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+/* Modo oscuro */
+body.dark-mode footer {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode footer .social-links a,
+body.dark-mode footer .privacy-links h5,
+body.dark-mode footer .privacy-links a {
+  color: #f0f0f0;
+}
+
+body.dark-mode footer a:hover {
+  color: #ccc;
+}

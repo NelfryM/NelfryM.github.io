@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portafolio personal">
     <meta name="keywords" content="portafolio, desarrollador, diseño web">
-    <meta name="author" content="Tu Nombre">
+    <meta name="author" content="Nelfry">
     <link rel="icon" href="img/Logo_Icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -14,29 +14,32 @@
     <title>Portafolio Personal</title>
 </head>
 <body>
+    
+
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="/img/logoImg.png" alt="Logo" height="30"></a>
-        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-                <a class="nav-link" href="#sobre-mi">Sobre mí
-                </a><a class="nav-link" href="#portafolio">Portafolio</a>
-            </a><a class="nav-link" href="#enlaces">Enlaces de Interes</a>
-            
-        </a><a class="nav-link" href="#noticias">Noticias</a>
+                <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                <a class="nav-link" href="#portafolio">Portafolio</a>
+                <a class="nav-link" href="#enlaces">Enlaces de Interes</a>
+                <a class="nav-link" href="#noticias">Noticias</a>
                 <a class="nav-link" href="#contacto">Contacto</a>
             </div>
         </div>
-        
         <button id="darkModeToggle" class="btn btn-outline-secondary ms-auto">Modo Oscuro</button>
     </div>
 </nav>
+
+<!-- Alerta de notificación -->
+<div id="notification" class="notification d-none"></div>
+
 
 <!-- Sección de inicio -->
 <section id="inicio" class="container mt-5">
@@ -126,6 +129,7 @@
         </div>
     </div>
 </section>
+
 <!-- Sección de enlaces de interés -->
 <section id="enlaces" class="container mt-5">
     <h2>Enlaces de interés</h2>
@@ -150,22 +154,26 @@
 <!-- Sección Contacto -->
 <section id="contacto" class="container mt-5">
     <h2>Contacto</h2>
-    <form id="contactForm" action="https://formsubmit.co/nm21-0153@unphu.edu.do" method="POST">
+    <form id="contactForm" action="#" method="POST">
         <div class="mb-3">
             <label for="name" class="form-label">Nombre</label>
             <input type="text" name="name" class="form-control" id="name" required>
+            <span id="nameError" class="error text-danger"></span>
         </div>
         <div class="mb-3">
             <label for="email" class="form-label">Email</label>
             <input type="email" name="email" class="form-control" id="email" required>
+            <span id="emailError" class="error text-danger"></span>
         </div>
         <div class="mb-3">
             <label for="subject" class="form-label">Asunto</label>
-            <input type="tex" name="subject" class="form-control" id="subject" required>
+            <input type="text" name="subject" class="form-control" id="subject" required>
+            <span id="subjectError" class="error text-danger"></span>
         </div>
         <div class="mb-3">
             <label for="message" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="message" rows="3" required></textarea>
+            <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+            <span id="messageError" class="error text-danger"></span>
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
@@ -173,31 +181,37 @@
     <div id="contactAlert" class="alert alert-success mt-3 d-none" role="alert">
         ¡Mensaje enviado con éxito!
     </div>
+    <div id="contactErrorAlert" class="alert alert-danger mt-3 d-none" role="alert">
+        Error al enviar el mensaje. Por favor, inténtelo de nuevo.
+    </div>
 </section>
+
 
 <!-- Sección de Políticas de Privacidad -->
 <section id="politicas" class="container mt-5" style="display: none;">
+    <div id="politicas-content" class="bg-white p-4 rounded shadow-lg">
     <h2>Políticas de Privacidad</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
     <p>Esta política de privacidad describe cómo manejamos y protegemos su información personal. Nos comprometemos a respetar su privacidad y proteger sus datos personales.</p>
     <p>Recolección de Información: Recopilamos información personal cuando se registra en nuestro sitio, realiza un pedido, se suscribe a nuestro boletín, responde a una encuesta o llena un formulario. La información recopilada puede incluir su nombre, dirección de correo electrónico, dirección postal, número de teléfono y detalles de su tarjeta de crédito.</p>
     <p>Uso de la Información: La información que recopilamos de usted puede ser utilizada para personalizar su experiencia, mejorar nuestro sitio web, mejorar el servicio al cliente, procesar transacciones, administrar un concurso, promoción, encuesta u otra característica del sitio y enviar correos electrónicos periódicos.</p>
-    <p>Protección de la Información: Implementamos diversas medidas de seguridad para mantener la seguridad de su información personal cuando realiza un pedido o ingresa, envía o accede a su información personal. Ofrecemos el uso de un servidor seguro. Toda la información sensible/de crédito suministrada se transmite a través de la tecnología Secure Socket Layer (SSL) y luego se encripta en nuestra base de datos de proveedores de pasarela de pago solo para ser accesible por aquellos autorizados con derechos especiales de acceso a dichos sistemas, y están obligados a mantener la información confidencial.</p>
-    <p>Divulgación a Terceros: No vendemos, comercializamos ni transferimos a terceros su información personal identificable. Esto no incluye a terceros de confianza que nos ayudan a operar nuestro sitio web, conducir nuestro negocio o prestarle servicios, siempre que esas partes acuerden mantener esta información confidencial. También podemos divulgar su información cuando creemos que la divulgación es apropiada para cumplir con la ley, hacer cumplir las políticas de nuestro sitio, o proteger nuestros derechos, propiedad o seguridad, o la de otros. Sin embargo, la información de visitantes no identificable personalmente puede ser proporcionada a otras partes para marketing, publicidad u otros usos.</p>
+</div>
 </section>
 
 <!-- Redes Sociales -->
 <footer class="container mt-5 text-center">
-    <a href="https://www.facebook.com/nelfry.mercado/" class="me-3"><i class="bi bi-facebook"></i></a>
-    <a href="https://www.instagram.com/nnelfry/" class="me-3"><i class="bi bi-instagram"></i></a>
-    <a href="https://www.tiktok.com/@nelfrymercado?is_from_webapp=1&sender_device=pc" class="me-3"><i class="bi bi-tiktok"></i></a>
-
-    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-    <h5 class="text-uppercase">Enlaces</h5>
-    <ul class="list-unstyled mb-0">
-        <li>
-            <a href="#!" id="toggle-privacidad" class="text-dark">Políticas de Privacidad</a>
-        </li>
+    <div class="social-links">
+        <a href="https://www.facebook.com/nelfry.mercado/" class="me-3"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/nnelfry/" class="me-3"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.tiktok.com/@nelfrymercado?is_from_webapp=1&sender_device=pc" class="me-3"><i class="bi bi-tiktok"></i></a>
+    </div>
+    <div class="privacy-links col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Enlaces</h5>
+        <ul class="list-unstyled mb-0">
+            <li>
+                <a href="#!" id="toggle-privacidad" class="text-light">Políticas de Privacidad</a>
+            </li>
+        </ul>
+    </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
